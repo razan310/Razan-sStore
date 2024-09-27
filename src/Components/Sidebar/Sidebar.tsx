@@ -24,8 +24,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose, cartItems }) => {
       >
         <GoArrowRight className="text-2xl text-red-700 hover:text-red-400" />
       </button>
-      <div className="flex flex-col h-full"> {/* جعل الحاوية flex و column لتكون مرنة */}
-        <div className="flex-1 overflow-y-auto p-4"> {/* الحاوية القابلة للتمرير */}
+      <div className="flex flex-col h-full">
+        <div className="flex-1 overflow-y-auto p-4">
           <h2 className="text-xl font-bold py-3 px-1 outline outline-offset-2 outline-1 outline-red-700 text-red-400">
             Shopping Bag
           </h2>
@@ -68,7 +68,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose, cartItems }) => {
             <p className="py-2">No items in the cart.</p>
           )}
         </div>
-        <div className="bg-white py-2 px-4 border-t border-gray-200"> {/* العنصر الثابت */}
+        <div className="bg-white py-2 px-4 border-t border-gray-200">
           <div className="font-bold">
             Total: ${cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}
           </div>

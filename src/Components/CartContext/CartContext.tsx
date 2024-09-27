@@ -1,13 +1,14 @@
 import React, { createContext, useState, ReactNode, useContext } from 'react';
 
-// تعريف واجهة بيانات العربة
-interface CartItem {
-  id: number;
-  image: string;
-  title: string;
-  price: number;
-  quantity: number; // إضافة كمية العنصر
-}
+// تصدير واجهة بيانات العربة
+export interface CartItem {
+    id: number;
+    image: string;
+    title: string;
+    price: number;
+    quantity: number; // كمية العنصر
+  }
+  
 
 interface CartContextType {
   cartItems: CartItem[];

@@ -13,7 +13,7 @@ const routes = createBrowserRouter([
     element: <Login />
   },
   {
-    path: "/",
+    path: "Razan-sStore/",
     element: <Home />
   },
   {
